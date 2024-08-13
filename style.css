@@ -465,9 +465,9 @@ canvas {
 
 .Separador3Control{
   position: absolute;
-  width: 70%;
+  width: 90%;
   transform: translate(-50%, -50%);
-  top: 180px;
+  top: 170px;
   left: 50%;
 }
 
