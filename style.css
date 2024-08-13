@@ -446,7 +446,7 @@ canvas {
 
 
 
-/* R E G A L O S */
+/* M E S A  D E  R E G A L O S */
 
 .RegalosBg {
   position: absolute;
@@ -460,6 +460,14 @@ canvas {
   background-size: 180%;
   background-repeat: no-repeat;
   background-position: 48% 65%;
+}
+
+.Separador3Control{
+  position: absolute;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .TitleRegalos {
