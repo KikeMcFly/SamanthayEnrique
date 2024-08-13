@@ -318,6 +318,7 @@ canvas {
 
 .TitleDressCode {
   position: absolute;
+  font-family: RoxvoroughCf;
   width: 100%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -382,6 +383,7 @@ canvas {
 
 .TitleUbicacion {
   position: absolute;
+  font-family: RoxvoroughCf;
   width: 100%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -473,6 +475,7 @@ canvas {
 
 .TitleRegalos {
   position: absolute;
+  font-family: RoxvoroughCf;
   width: 100%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -489,6 +492,7 @@ canvas {
 
 .TitleConfirmacion {
   position: absolute;
+  font-family: RoxvoroughCf;
   width: 100%;
   text-align: center;
   transform: translate(-50%, -50%);
