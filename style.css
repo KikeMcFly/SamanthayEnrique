@@ -571,6 +571,13 @@ canvas {
 
 /* G A L E R I A  D E  F O T O S */
 
+.TitleGaleria{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
