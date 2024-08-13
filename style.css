@@ -138,7 +138,7 @@ canvas {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url(archivos/BGAGRAD.jpg);
+  background-image: url(ARCHIVOS/BGAGRAD.jpg);
   background-size: 180%;
   background-repeat: no-repeat;
   background-position: 65% 50%;
