@@ -464,9 +464,9 @@ canvas {
 
 .Separador3Control{
   position: absolute;
-  width: 80%;
+  width: 40%;
   transform: translate(-50%, -50%);
-  top: 60%;
+  top: 200px;
   left: 50%;
 }
 
@@ -512,16 +512,16 @@ canvas {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; /* Espacio entre los grupos de input */
+  margin-bottom: 20px;
 }
 
 .label {
-  margin-bottom: 10px; /* Espacio entre el label y el input */
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
   color: #00000099;
   transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
-  text-align: center; /* Alinear el texto del label al centro */
+  text-align: center;
 }
 
 .input {
@@ -567,10 +567,7 @@ canvas {
 
 
 
-
-
-
-
+/* G A L E R I A  D E  F O T O S */
 
 .gallery {
   display: flex;
