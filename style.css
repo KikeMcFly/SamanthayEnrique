@@ -1,0 +1,620 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+audio {
+  display: none;
+}
+
+section {
+  /* scroll-snap-align: start; */
+  width: 100%;
+  height: 52rem;
+  position: relative;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  z-index: 2;
+}
+
+
+
+
+/* F U E N T E S */
+
+@font-face {
+  font-family: FuenteParaNombres;
+  src: url(fuentes/Darlington.ttf);
+}
+
+@font-face {
+  font-family: FuenteParaAgradecimiento;
+  src: url(fuentes/JosefinSlab.ttf);
+}
+
+@font-face {
+  font-family: Monserrat;
+  src: url(fuentes/Montserrat.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(fuentes/PlayfairDisplay.otf);
+}
+
+@font-face {
+  font-family: RoxvoroughCf;
+  src: url(fuentes/RoxboroughCF.ttf);
+}
+
+
+
+
+/* P O R T A D A */
+
+.NombresPortada {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  text-shadow: 0px 5px 30px #000000;
+
+}
+
+.PrimeraLetra {
+  position: absolute;
+  font-size: 20rem;
+  transform: translate(-50%, -50%);
+  top: 280px;
+  left: 45%;
+}
+
+.SegundaLetra {
+  position: absolute;
+  font-size: 20rem;
+  transform: translate(-50%, -50%);
+  top: 450px;
+  left: 55%;
+}
+
+.NombresCompletos {
+  font-family: PlayfairDisplay;
+  white-space: nowrap;
+  position: absolute;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  top: 580px;
+  left: 50%;
+}
+
+.NuestraBoda {
+  font-family: Monserrat;
+  white-space: nowrap;
+  position: absolute;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  top: 610px;
+  left: 50%;
+  font-weight: lighter;
+}
+
+.VideoPortada {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.ImgFlorBg {
+  position: absolute;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  top: 400px;
+  left: 60%;
+  z-index: -1;
+  opacity: 70%;
+}
+
+
+
+
+/* A G R A D E C I M I E N T O */
+
+.AgradecimientoBg {
+  position: absolute;
+  background-attachment: local;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(archivos/BGAGRAD.jpg);
+  background-size: 180%;
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  filter: blur(5px);
+}
+
+.FuenteAgradecimiento {
+  font-family: FuenteParaAgradecimiento;
+  font-size: 33px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 1px 2px #1f1f1f2b;
+  position: absolute;
+  width: 90%;
+  height: 65%;
+  transform: translate(7%, 50%);
+}
+
+.ESQ1 {
+  position: absolute;
+  width: 115px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  top: 15%;
+  left: 17%;
+}
+
+.ESQ2 {
+  position: absolute;
+  width: 115px;
+  transform: translate(-50%, -50%) rotate(90deg);
+  top: 15%;
+  left: 83%;
+}
+
+.ESQ3 {
+  position: absolute;
+  width: 115px;
+  transform: translate(-50%, -50%) rotate(270deg);
+  top: 85%;
+  left: 17%;
+}
+
+.ESQ4 {
+  position: absolute;
+  width: 115px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  top: 85%;
+  left: 83%;
+}
+
+
+
+
+/* F E C H A */
+
+.FuenteFecha {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 250px;
+  left: 50%;
+  text-align: center;
+  font-family: RoxvoroughCf;
+  font-size: 35px;
+  width: 100%;
+}
+
+.contenedor {
+  color: #000000;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 560px;
+  left: 50%;
+}
+
+.cartel {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  margin: 0px;
+}
+
+.cartel>div {
+  font-size: 40px;
+  font-family: Monserrat;
+  margin-top: 0;
+}
+
+.cartel>div>h3 {
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.h3 {
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.contenido {
+  width: 100%;
+}
+
+.Separador1Control {
+  position: absolute;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.custom-shape-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+  fill: rgba(36, 36, 36, 1);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom svg {
+    width: calc(100% + 1.3px);
+    height: 32px;
+  }
+}
+
+.custom-shape-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.custom-shape-divider-top .shape-fill {
+  fill: rgba(14, 14, 14, 1);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top svg {
+    width: calc(100% + 1.3px);
+    height: 32px;
+  }
+}
+
+
+
+
+/* D R E S S  C O D E */
+
+.TitleDressCode {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 100px;
+  left: 50%;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.ComplemenraryTextPosControl {
+  position: absolute;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  top: 250px;
+  left: 50%;
+  text-align: center;
+}
+
+.TextoPrincipal {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.TextoSecundario {
+  font-size: 12px;
+  color: rgb(162, 162, 162);
+}
+
+.ImgMen {
+  position: absolute;
+  width: 150px;
+  transform: translate(-50%, -50%);
+  top: 550px;
+  left: 25%;
+}
+
+.ImgWoMen {
+  position: absolute;
+  width: 115px;
+  transform: translate(-50%, -50%);
+  top: 550px;
+  left: 80%;
+}
+
+.GradientBlack {
+  background: rgb(14, 14, 14);
+  background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(36, 36, 36, 1) 100%);
+}
+
+.Separador2Control {
+  position: absolute;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  top: 42%;
+  left: 50%;
+}
+
+
+
+
+/* U B I C A C I O N */
+
+.TitleUbicacion {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 150px;
+  left: 50%;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.ImgSalon {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ImgBgSalon {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.ImgText {
+  position: absolute;
+  font-family: RoxvoroughCf;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 630px;
+  left: 50%;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.map-button {
+  position: absolute;
+  width: 70%;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  top: 700px;
+  left: 50%;
+  background-color: rgba(36, 36, 36, 1);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.map-button:hover {
+  background-color: #868686;
+}
+
+
+
+
+/* R E G A L O S */
+
+.RegalosBg {
+  position: absolute;
+  background-attachment: local;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(archivos/BgRegalos.jpg);
+  background-size: 180%;
+  background-repeat: no-repeat;
+  background-position: 48% 65%;
+}
+
+.TitleRegalos {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 100px;
+  left: 50%;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+/* C O N F I R M A C I O N */
+.TitleConfirmacion {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 100px;
+  left: 50%;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+.ButtonPosition {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 300px;
+  left: 50%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio entre los grupos de input */
+}
+
+.label {
+  margin-bottom: 10px; /* Espacio entre el label y el input */
+  font-size: 20px;
+  font-weight: bold;
+  color: #00000099;
+  transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+  text-align: center; /* Alinear el texto del label al centro */
+}
+
+.input {
+  width: 100%;
+  height: 55px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 5px;
+  border: 2px solid transparent;
+  font-size: 30px;
+  transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: #05060f;
+}
+
+.input-group:hover .label,
+.input:focus {
+  color: #05060fc2;
+}
+
+.ConfirmButton {
+  position: absolute;
+  width: 70%;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  top: 600px;
+  left: 50%;
+  background-color: rgba(36, 36, 36, 1);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.photo-container {
+  flex: 1 1 calc(40%);
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbbbbb;
+  text-decoration: none;
+  cursor: pointer;
+}

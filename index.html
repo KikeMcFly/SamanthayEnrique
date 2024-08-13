@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <audio id="bgm" src="ARCHIVOS/BGMUSIC.mp3" loop></audio>
+
+
+
+
+
+  <!-- P O R T A D A -->
+
+  <section>
+
+    <video class="VideoPortada" src="ARCHIVOS/BGVIDEOPPAL.webm" id="VideoPortadaId" loop autoplay muted
+      playsinline></video>
+
+    <div>
+      <div class="NombresPortada">
+        <h2 class="SegundaLetra">E</h2>
+        <h2 class="PrimeraLetra">S</h2>
+        <h4 class="NombresCompletos">SAMANTHA & ENRIQUE</h4>
+        <h4 class="NuestraBoda">NUESTRA BODA</h4>
+      </div>
+    </div>
+
+    <img class="ImgFlorBg" src="ARCHIVOS/FLORBG.svg">
+
+
+  </section>
+
+
+
+
+
+  <!-- A G R A D E C I M I E N T O -->
+
+  <section>
+
+    <img class="ESQ1" src="ARCHIVOS/ESQ1.svg">
+    <img class="ESQ2" src="ARCHIVOS/ESQ1.svg">
+    <img class="ESQ3" src="ARCHIVOS/ESQ1.svg">
+    <img class="ESQ4" src="ARCHIVOS/ESQ1.svg">
+
+
+    <div class="AgradecimientoBg"></div>
+
+    <div class="FlexBoxContainer">
+      <div class="FuenteAgradecimiento">
+        <p>"Tenemos el honor de invitarle a celebrar nuestro amor y unión matrimonial"</p>
+        <br>
+        <p>"Esperamos contar con su presencia para compartir este momento tan especial"</p>
+        <br>
+        <p>¡Le esperamos con mucha ilusión!</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- F E C H A  Y  C O N T A D O R -->
+
+  <section>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="ComplemenraryTextPosControl FuenteFecha">
+      <h2>02 de Noviembre del 2024</h2>
+    </div>
+
+    <img class="Separador1Control" src="ARCHIVOS/SEPARADOR1.svg">
+
+    <div class="contenedor">
+      <div class="contenido">
+        <div class="contador">
+          <div class="cartel">
+            <div id="dias"></div>
+            <div class="h3">
+              <h3>Días</h3>
+            </div>
+          </div>
+          <div class="cartel">
+            <div id="horas"></div>
+            <div class="h3">
+              <h3>Horas</h3>
+            </div>
+          </div>
+          <div class="cartel">
+            <div id="minutos"></div>
+            <div class="h3">
+              <h3>Minutos</h3>
+            </div>
+          </div>
+          <div class="cartel">
+            <div id="segundos"></div>
+            <div class="h3">
+              <h3>Segundos</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-shape-divider-bottom">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- D R E S S C O D E -->
+  <section class="GradientBlack">
+
+    <h2 class="TitleDressCode">DRESSCODE</h2>
+
+    <img class="Separador2Control" src="ARCHIVOS/SEPARADOR2.svg">
+
+    <div class="ComplemenraryTextPosControl">
+      <h3 class="TextoPrincipal">FORMAL ALL BLACK & TENNIS</h3>
+      <br>
+      <h3 class="TextoSecundario">(COMPLETAMENTE DE NEGRO Y EN TENNIS BLANCOS O NEGROS)</h3>
+    </div>
+
+    <img class="ImgMen" src="archivos/mendress.png" alt="" width="150px">
+    <img class="ImgWoMen" src="archivos/womendress.png" alt="" width="120px">
+
+  </section>
+
+
+
+
+
+  <!-- U B I C A C I O N -->
+  <section>
+    <div class="custom-shape-divider-top">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <img class="ESQ1" src="ARCHIVOS/ESQ2.svg">
+    <img class="ESQ2" src="ARCHIVOS/ESQ2.svg">
+    <img class="ESQ3" src="ARCHIVOS/ESQ2.svg">
+    <img class="ESQ4" src="ARCHIVOS/ESQ2.svg">
+
+    <div>
+      <img class="ImgSalon" src="ARCHIVOS/SALON.JPG">
+      <img class="ImgBgSalon" src="ARCHIVOS/CIRCLEROSE.svg">
+      <h2 class="ImgText">REAL ZACATECAS, MONCLOVA</h2>
+    </div>
+
+    <button class="map-button" onclick="openMap()">ABRIR UBICACION EN MAPS</button>
+
+    <h2 class="TitleUbicacion">UBICACION</h2>
+
+
+
+  </section>
+
+
+
+
+
+  <!-- R E G A L O S -->
+  <section>
+
+    <div class="RegalosBg"></div>
+
+    <h2 class="TitleRegalos">MESA DE REGALOS</h2>
+    
+  </section>
+
+
+
+
+
+  <!-- C O N F I R M A C I O N -->
+  <section>
+    <h2 class="TitleConfirmacion">CONFIRMACION</h2>
+  
+    <div class="ButtonPosition">
+      <div class="input-group">
+        <label class="label">PRIMER INVITADO</label>
+        <input autocomplete="off" id="Priminv" class="input" type="text">
+      </div>
+  
+      <div class="input-group">
+        <label class="label">SEGUNDO INVITADO</label>
+        <input autocomplete="off" id="Seginv" class="input" type="text">
+      </div>
+    </div>
+  
+    <button id="confirmButton" class="ConfirmButton" onclick="ConfirmMessage()">
+      <img height="20" width="20" src="ARCHIVOS/WAICO.svg">
+      <span>CONFIRMAR</span>
+    </button>
+  </section>
+
+
+
+  
+  <!-- G A L E R I A D E F O T O S -->
+  
+
+
+  <section class="gallery">
+
+    <div class="photo-container">
+        <img src="ARCHIVOS/BGAGRAD.jpg" alt="Foto 1" class="photo" onclick="openModal(this)">
+    </div>
+    <div class="photo-container">
+        <img src="ARCHIVOS/BgRegalos.jpg" alt="Foto 2" class="photo" onclick="openModal(this)">
+    </div>
+    <div class="photo-container">
+        <img src="ARCHIVOS/BgRegalos.jpg" alt="Foto 4" class="photo" onclick="openModal(this)">
+    </div>
+</section>
+
+<!-- Modal para mostrar la imagen en grande -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+<script src="particles.js"></script>
+<script src="contador.js"></script>
+
+<!-- <script>
+    window.addEventListener('load', function () {
+        var video = document.getElementById('VideoPortadaId');
+        video.play();
+    }); 
+</script> -->
+
+<script>
+  function openMap() {
+    var url = "https://www.google.com/maps?q=Salón+Real+Zacatecas,Monclova,Coahuila&z=15";
+    window.location.href = url;
+  }
+
+  function ConfirmMessage() {
+    var primInv = document.getElementById("Priminv").value;
+    var segInv = document.getElementById("Seginv").value;
+
+    // Validar si ambos campos están llenos
+    if (!primInv || !segInv) {
+        alert("Por favor, llene ambos campos de invitados antes de confirmar.");
+        return; // Detener la ejecución si no están llenos
+    }
+
+    // Si ambos campos están llenos, proceder con la acción
+    var mensaje = "GRACIAS POR INVITARNOS, " + primInv + " y " + segInv + " CONFIRMAMOS!!";
+    var url = "https://api.whatsapp.com/send?phone=8129797754&text=" + encodeURIComponent(mensaje);
+
+    window.location.href = url;
+}
+
+
+
+function openModal(element) {
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("modalImg");
+    
+    modal.style.display = "block";
+    modalImg.src = element.src;
+}
+
+function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
+
+
+
+
+
+
+
+
+</script>
+
+<script>
+  document.getElementById("bgm").play();
+  bgm.play();
+</script>
+
+</html>
