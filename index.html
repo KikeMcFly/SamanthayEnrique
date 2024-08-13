@@ -276,18 +276,31 @@
     window.location.href = url;
   }
 
-  function openModal(element) {
-    var modal = document.getElementById("modal");
-    var modalImg = document.getElementById("modalImg");
 
-    modal.style.display = "block";
-    modalImg.src = element.src;
-  }
+// M O D A L  S C R I P T //
 
-  function closeModal() {
-    var modal = document.getElementById("modal");
+  function openModal(imgElement) {
+  var modal = document.getElementById('myModal');
+  var modalImg = document.getElementById('img01');
+  modal.style.display = "flex";
+  modalImg.src = imgElement.src;
+
+  setTimeout(function() {
+    modal.classList.add("show");
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById('myModal');
+  modal.classList.remove("show");
+
+  setTimeout(function() {
     modal.style.display = "none";
-  }
+  }, 500);
+}
+
+
+
 
 </script>
 
