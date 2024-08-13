@@ -573,6 +573,7 @@ canvas {
 
 .TitleGaleria{
   font-size: 40px;
+  width: 100%;
   color: rgb(0, 0, 0);
   text-align: center;
   margin-bottom: 20px;
