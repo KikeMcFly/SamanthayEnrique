@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>BODA SAMANTHA Y ENRIQUE</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -12,7 +12,6 @@
 <body>
 
   <audio id="bgm" src="ARCHIVOS/BGMUSIC.mp3" loop></audio>
-
 
 
 
@@ -127,6 +126,7 @@
 
 
   <!-- D R E S S C O D E -->
+
   <section class="GradientBlack">
 
     <h2 class="TitleDressCode">DRESSCODE</h2>
@@ -149,6 +149,7 @@
 
 
   <!-- U B I C A C I O N -->
+
   <section>
     <div class="custom-shape-divider-top">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -182,12 +183,13 @@
 
 
   <!-- R E G A L O S -->
+
   <section>
 
     <div class="RegalosBg"></div>
 
     <h2 class="TitleRegalos">MESA DE REGALOS</h2>
-    
+
   </section>
 
 
@@ -195,21 +197,22 @@
 
 
   <!-- C O N F I R M A C I O N -->
+
   <section>
     <h2 class="TitleConfirmacion">CONFIRMACION</h2>
-  
+
     <div class="ButtonPosition">
       <div class="input-group">
         <label class="label">PRIMER INVITADO</label>
         <input autocomplete="off" id="Priminv" class="input" type="text">
       </div>
-  
+
       <div class="input-group">
         <label class="label">SEGUNDO INVITADO</label>
         <input autocomplete="off" id="Seginv" class="input" type="text">
       </div>
     </div>
-  
+
     <button id="confirmButton" class="ConfirmButton" onclick="ConfirmMessage()">
       <img height="20" width="20" src="ARCHIVOS/WAICO.svg">
       <span>CONFIRMAR</span>
@@ -218,48 +221,38 @@
 
 
 
-  
-  <!-- G A L E R I A D E F O T O S -->
-  
 
+  <!-- G A L E R I A D E F O T O S -->
 
   <section class="gallery">
 
     <div class="photo-container">
-        <img src="ARCHIVOS/BGAGRAD.jpg" alt="Foto 1" class="photo" onclick="openModal(this)">
+      <img src="ARCHIVOS/BGAGRAD.jpg" alt="Foto 1" class="photo" onclick="openModal(this)">
     </div>
     <div class="photo-container">
-        <img src="ARCHIVOS/BgRegalos.jpg" alt="Foto 2" class="photo" onclick="openModal(this)">
+      <img src="ARCHIVOS/BgRegalos.jpg" alt="Foto 2" class="photo" onclick="openModal(this)">
     </div>
     <div class="photo-container">
-        <img src="ARCHIVOS/BgRegalos.jpg" alt="Foto 4" class="photo" onclick="openModal(this)">
+      <img src="ARCHIVOS/GAL1.JPG" alt="Foto 4" class="photo" onclick="openModal(this)">
     </div>
-</section>
+    <div class="photo-container">
+      <img src="ARCHIVOS/GAL2.JPG" alt="Foto 4" class="photo" onclick="openModal(this)">
+    </div>
+    <div class="photo-container">
+      <img src="ARCHIVOS/GAL3.JPG" alt="Foto 4" class="photo" onclick="openModal(this)">
+    </div>
+  </section>
 
-<!-- Modal para mostrar la imagen en grande -->
-<div id="modal" class="modal">
+  <!-- Modal para mostrar la imagen en grande -->
+  <div id="modal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="modalImg">
-</div>
-
-
-
-
-
-
-
+  </div>
 
 </body>
 
 <script src="particles.js"></script>
 <script src="contador.js"></script>
-
-<!-- <script>
-    window.addEventListener('load', function () {
-        var video = document.getElementById('VideoPortadaId');
-        video.play();
-    }); 
-</script> -->
 
 <script>
   function openMap() {
@@ -271,40 +264,29 @@
     var primInv = document.getElementById("Priminv").value;
     var segInv = document.getElementById("Seginv").value;
 
-    // Validar si ambos campos están llenos
     if (!primInv || !segInv) {
-        alert("Por favor, llene ambos campos de invitados antes de confirmar.");
-        return; // Detener la ejecución si no están llenos
+      alert("Por favor, llene ambos campos de invitados antes de confirmar.");
+      return;
     }
 
-    // Si ambos campos están llenos, proceder con la acción
     var mensaje = "GRACIAS POR INVITARNOS, " + primInv + " y " + segInv + " CONFIRMAMOS!!";
     var url = "https://api.whatsapp.com/send?phone=8129797754&text=" + encodeURIComponent(mensaje);
 
     window.location.href = url;
-}
+  }
 
-
-
-function openModal(element) {
+  function openModal(element) {
     var modal = document.getElementById("modal");
     var modalImg = document.getElementById("modalImg");
-    
+
     modal.style.display = "block";
     modalImg.src = element.src;
-}
+  }
 
-function closeModal() {
+  function closeModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "none";
-}
-
-
-
-
-
-
-
+  }
 
 </script>
 
