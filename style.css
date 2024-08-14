@@ -459,15 +459,7 @@ canvas {
   background-image: url(ARCHIVOS/BGREGALOS.jpeg);
   background-size: 180%;
   background-repeat: no-repeat;
-  background-position: 48% 65%;
-}
-
-.Separador3Control{
-  position: absolute;
-  width: 90%;
-  transform: translate(-50%, -50%);
-  top: 170px;
-  left: 50%;
+  background-position: 46% 65%;
 }
 
 .TitleRegalos {
@@ -479,6 +471,35 @@ canvas {
   top: 100px;
   left: 50%;
   font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+.Separador3Control{
+  position: absolute;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  top: 170px;
+  left: 50%;
+}
+
+.SobreControl{
+  position: absolute;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  top: 350px;
+  left: 50%;
+}
+
+.TextoMesaRegalos {
+  position: absolute;
+  font-family: Monserrat;
+  font-weight: lighter;
+  width: 80%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 620px;
+  left: 50%;
+  font-size: 20px;
   color: rgb(255, 255, 255);
 }
 
