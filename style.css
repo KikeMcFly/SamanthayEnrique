@@ -520,6 +520,18 @@ canvas {
   color: rgb(0, 0, 0);
 }
 
+.TextNoNi{
+  position: absolute;
+  font-family: RoxvoroughCf;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 600px;
+  left: 50%;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
 .ButtonPosition {
   position: absolute;
   transform: translate(-50%, -50%);
