@@ -194,15 +194,26 @@ canvas {
 
 /* F E C H A */
 
-.FuenteFecha {
+.TituloFecha {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 250px;
+  top: 180px;
   left: 50%;
   text-align: center;
   font-family: RoxvoroughCf;
+  font-size: 45px;
+  width: 80%;
+}
+
+.TextoHora {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 380px;
+  left: 50%;
+  text-align: center;
+  font-family: PlayfairDisplay;
   font-size: 35px;
-  width: 100%;
+  width: 80%;
 }
 
 .contenedor {
@@ -212,7 +223,7 @@ canvas {
   width: 100%;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 560px;
+  top: 640px;
   left: 50%;
 }
 
@@ -250,7 +261,7 @@ canvas {
   position: absolute;
   width: 80%;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 500px;
   left: 50%;
 }
 
@@ -275,14 +286,6 @@ canvas {
   fill: rgba(36, 36, 36, 1);
 }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-bottom svg {
-    width: calc(100% + 1.3px);
-    height: 32px;
-  }
-}
-
 .custom-shape-divider-top {
   position: absolute;
   top: 0;
@@ -303,13 +306,6 @@ canvas {
   fill: rgba(14, 14, 14, 1);
 }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-top svg {
-    width: calc(100% + 1.3px);
-    height: 32px;
-  }
-}
 
 
 
