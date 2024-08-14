@@ -211,9 +211,10 @@ canvas {
   top: 380px;
   left: 50%;
   text-align: center;
-  font-family: PlayfairDisplay;
+  font-family: Monserrat;
   font-size: 35px;
   width: 80%;
+  font-weight: lighter;
 }
 
 .contenedor {
