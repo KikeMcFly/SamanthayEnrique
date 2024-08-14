@@ -508,7 +508,53 @@ canvas {
 
 /* C O N F I R M A C I O N */
 
+.ContenedorFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .TitleConfirmacion {
+  font-family: RoxvoroughCf;
+  width: 90%;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin: 20px 0 40px 0;
+  /* Margen: arriba, derecha, abajo, izquierda */
+}
+
+.FormCtrl {
+  margin: 40px 0 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.EspacioElem {
+  margin: 10px;
+}
+
+.NoninCtrl {
+  margin: 40px 0 40px 0;
+}
+
+.ConfirmButton {
+  width: 70%;
+  height: 60px;
+  background-color: rgba(36, 36, 36, 1);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 80px 0 40px 0;
+}
+
+
+
+/* .TitleConfirmacion {
   position: absolute;
   font-family: RoxvoroughCf;
   width: 100%;
@@ -573,8 +619,8 @@ canvas {
 
 .TextNoNi{
   font-family: RoxvoroughCf;
-  /* width: 100%; */
-  text-align: center;
+  width: 100%; 
+   text-align: center;
   font-size: 40px;
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
@@ -595,7 +641,7 @@ canvas {
   font-size: 20px;
   border-radius: 10px;
   border: none;
-}
+} */
 
 
 

@@ -205,8 +205,28 @@
 
   <!-- C O N F I R M A C I O N -->
 
-  <section>
-    <h2 class="TitleConfirmacion">CONFIRMACION</h2>
+  <section class="ContenedorFlex">
+    <h1 class="TitleConfirmacion">Formulario de Invitados</h1>
+
+    <div class="FormCtrl">
+        <label class="EspacioElem" for="primer-invitado">Nombre del Primer Invitado:</label>
+        <input class="EspacioElem" type="text" autocomplete="off" id="Priminv">
+        <label class="EspacioElem" for="segundo-invitado">Nombre del Segundo Invitado:</label>
+        <input class="EspacioElem" type="text" autocomplete="off" id="Seginv">
+    </div>
+
+    <p class="NoninCtrl">-NO NIÑOS-</p>
+
+    <button id="onfirmButton" class="ConfirmButton" onclick="ConfirmMessage()">
+        <img height="20" width="20" src="ARCHIVOS/WAICO.svg">
+        <span>CONFIRMAR</span>
+      </button>
+
+</section>
+
+
+
+    <!-- <h2 class="TitleConfirmacion">CONFIRMACION</h2>
 
     <div class="ButtonPosition">
       <div class="input-group">
@@ -225,8 +245,8 @@
     <button id="confirmButton" class="ConfirmButton" onclick="ConfirmMessage()">
       <img height="20" width="20" src="ARCHIVOS/WAICO.svg">
       <span>CONFIRMAR</span>
-    </button>
-  </section>
+    </button> -->
+
 
 
 
