@@ -208,7 +208,7 @@ canvas {
 .TextoHora {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 390px;
+  top: 395px;
   left: 50%;
   text-align: center;
   font-family: Monserrat;
