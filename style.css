@@ -521,15 +521,13 @@ canvas {
 }
 
 .TextNoNi{
-  position: absolute;
   font-family: RoxvoroughCf;
   width: 100%;
   text-align: center;
-  transform: translate(-50%, -50%);
-  top: 600px;
-  left: 50%;
   font-size: 20px;
   color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .ButtonPosition {
