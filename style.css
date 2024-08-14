@@ -520,12 +520,12 @@ canvas {
   text-align: center;
   font-size: 40px;
   color: rgb(0, 0, 0);
-  margin: 20px 0 40px 0;
+  margin: 50px 0 40px 0;
   /* Margen: arriba, derecha, abajo, izquierda */
 }
 
 .FormCtrl {
-  margin: 40px 0 70px 0;
+  margin: 40px 0 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -567,7 +567,7 @@ canvas {
   font-size: 20px;
   border-radius: 10px;
   border: none;
-  margin: 80px 0 40px 0;
+  margin: 60px 0 0 0;
 }
 
 
