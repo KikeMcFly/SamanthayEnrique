@@ -548,12 +548,13 @@ canvas {
 }
 
 .EspacioElem {
-  font-size: 30px;
   margin: 10px;
 }
 
 .NoninCtrl {
+  font-size: 40px;
   margin: 40px 0 40px 0;
+  font-weight: bold;
 }
 
 .ConfirmButton {
