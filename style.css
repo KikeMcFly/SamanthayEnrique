@@ -6,7 +6,7 @@
 
 html {
   scroll-snap-type: y mandatory;
-  background-color: #ffffff;
+  background: #ffffff;
 }
 
 audio {
