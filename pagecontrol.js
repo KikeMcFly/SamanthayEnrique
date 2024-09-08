@@ -20,5 +20,7 @@ function ConfirmMessage() {
 
 window.onload = function() {
     var audio = new Audio('ARCHIVOS/BGMUSIC.ogg');
- audio.play();
- }
+    audio.controls = true; // Agrega controles de reproducción
+    audio.autoplay = true; // Reproduce automáticamente al cargar
+    document.body.appendChild(audio); // Agrega el elemento de audio al cuerpo del documento
+};
