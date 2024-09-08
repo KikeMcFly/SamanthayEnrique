@@ -6,7 +6,6 @@
 
 html {
   scroll-snap-type: y mandatory;
-  background: #ffffff;
 }
 
 audio {
@@ -27,7 +26,11 @@ canvas {
 }
 
 
-
+@media (prefers-color-scheme:dark){
+  body{
+  background:white;
+  }
+  }
 
 /* F U E N T E S */
 
