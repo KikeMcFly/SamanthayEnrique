@@ -465,7 +465,7 @@ canvas {
 .TitleRegalos {
   position: absolute;
   font-family: RoxvoroughCf;
-  width: 100%;
+  width: 80%;
   text-align: center;
   transform: translate(-50%, -50%);
   top: 100px;
@@ -670,7 +670,7 @@ canvas {
 .TitleGaleria{
   font-size: 40px;
   font-family: RoxvoroughCf;
-  width: 100%;
+  width: 90%;
   color: rgb(0, 0, 0);
   text-align: center;
   margin-bottom: 20px;
