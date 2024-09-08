@@ -18,10 +18,7 @@ function ConfirmMessage() {
     window.location.href = url;
 }
 
-// Obtener el elemento de audio
-const audio = document.getElementById('bg-audio');
-
-// Reproducir el audio
-audio.play().catch(error => {
-    console.error('Error al reproducir el audio:', error);
-});
+window.onload = function() {
+    var audio = new Audio('ARCHIVOS/BGMUSIC.ogg');
+ audio.play();
+ }
