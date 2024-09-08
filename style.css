@@ -25,13 +25,6 @@ canvas {
   z-index: 2;
 }
 
-
-@media (prefers-color-scheme:dark){
-  body{
-  background:white;
-  }
-  }
-
 /* F U E N T E S */
 
 @font-face {
@@ -576,97 +569,6 @@ canvas {
 
 
 
-/* .TitleConfirmacion {
-  position: absolute;
-  font-family: RoxvoroughCf;
-  width: 100%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  top: 100px;
-  left: 50%;
-  font-size: 40px;
-  color: rgb(0, 0, 0);
-}
-
-.ButtonPosition {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 300px;
-  left: 50%;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.input-group {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.label {
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #00000099;
-  transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
-  text-align: center;
-}
-
-.input {
-  width: 100%;
-  height: 55px;
-  background-color: #05060f0a;
-  border-radius: .5rem;
-  padding: 5px;
-  border: 2px solid transparent;
-  font-size: 30px;
-  transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
-}
-
-.input:hover,
-.input:focus,
-.input-group:hover .input {
-  outline: none;
-  border-color: #05060f;
-}
-
-.input-group:hover .label,
-.input:focus {
-  color: #05060fc2;
-}
-
-.TextNoNi{
-  font-family: RoxvoroughCf;
-  width: 100%; 
-   text-align: center;
-  font-size: 40px;
-  color: rgb(0, 0, 0);
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.ConfirmButton {
-  position: absolute;
-  width: 70%;
-  height: 60px;
-  transform: translate(-50%, -50%);
-  top: 600px;
-  left: 50%;
-  background-color: rgba(36, 36, 36, 1);
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 10px;
-  border: none;
-} */
-
-
-
 
 
 /* G A L E R I A  D E  F O T O S */
@@ -675,6 +577,7 @@ canvas {
   font-size: 40px;
   font-family: RoxvoroughCf;
   width: 90%;
+  height: 100px;
   color: rgb(0, 0, 0);
   text-align: center;
   margin-bottom: 20px;
