@@ -19,8 +19,20 @@ function ConfirmMessage() {
 }
 
 window.onload = function() {
+    // Crear un nuevo elemento de audio
     var audio = new Audio('ARCHIVOS/BGMUSIC.ogg');
-    audio.controls = true; // Agrega controles de reproducción
-    audio.autoplay = true; // Reproduce automáticamente al cargar
-    document.body.appendChild(audio); // Agrega el elemento de audio al cuerpo del documento
+    audio.setAttribute('preload', 'auto'); // Pre-cargar el audio
+
+    // Función para reproducir el audio
+    function playAudio() {
+        audio.play().catch(function(error) {
+            console.error('Error al reproducir el audio:', error);
+        });
+        // Eliminar el evento para que no se reproduzca más de una vez
+        window.removeEventListener('scroll', playAudio);
+    }
+
+    // Agregar el evento de scroll
+    window.addEventListener('scroll', playAudio);
 };
+
