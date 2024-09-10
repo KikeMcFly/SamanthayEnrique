@@ -17,22 +17,3 @@ function ConfirmMessage() {
 
     window.location.href = url;
 }
-
-window.onload = function() {
-    // Crear un nuevo elemento de audio
-    var audio = new Audio('ARCHIVOS/BGMUSIC.ogg');
-    audio.setAttribute('preload', 'auto'); // Pre-cargar el audio
-
-    // Función para reproducir el audio
-    function playAudio() {
-        audio.play().catch(function(error) {
-            console.error('Error al reproducir el audio:', error);
-        });
-        // Eliminar el evento para que no se reproduzca más de una vez
-        window.removeEventListener('scroll', playAudio);
-    }
-
-    // Agregar el evento de scroll
-    window.addEventListener('scroll', playAudio);
-};
-
