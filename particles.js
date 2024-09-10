@@ -4,14 +4,14 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var particles = [];
-var num_particles = 20; // Cantidad de partículas
+var num_particles = 10; // Cantidad de partículas
 var minSpeed = 0.05; // Velocidad mínima del movimiento
 var maxSpeed = 0.2; // Velocidad máxima del movimiento
-var minOpacity = 0.04; // Opacidad mínima
-var maxOpacity = 0.07; // Opacidad máxima
-var rotationSpeed = 0.02; // Velocidad de rotación
-var maxRotation = Math.PI / 0.08; // Máxima rotación (en radianes)
-var minSize = 15; // Tamaño mínimo de las partículas
+var minOpacity = 0.06; // Opacidad mínima
+var maxOpacity = 0.09; // Opacidad máxima
+var rotationSpeed = 0.01; // Velocidad de rotación
+var maxRotation = Math.PI / 0.05; // Máxima rotación (en radianes)
+var minSize = 50; // Tamaño mínimo de las partículas
 var maxSize = 100; // Tamaño máximo de las partículas
 
 // Array de imágenes SVG
